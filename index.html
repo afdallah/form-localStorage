@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar Cookie</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 2em auto;
+      padding: 2em;
+      border: 1px solid #ddd;
+      transition: all .3s ease;
+    }
+
+    label,
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      min-height: 43px;
+      margin-bottom : 2em;
+      padding-left: 13px;
+      padding-right: 13px;
+      border: 1px solid #bbb;
+    }
+
+    textarea {
+      min-height: 8em;
+    }
+
+    input[type="submit"] {
+      margin: 0;
+      background: #333;
+      color: #fff;
+      border: 1px solid #333;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .hidden {
+      position: absolute;
+      transform: scale(0);
+      transform-origin: 50% 50%;
+      clip: rect(0, 0, 0, 0)
+    }
+  </style>
+</head>
+<body>
+  <h2 class="center">Persisting form data into localStorage</h2>
+
+  <form action="">
+    <label for="name">Name</label>
+    <input type="text" name="" id="name">
+
+    <label for="email">Email Address</label>
+    <input type="email" name="" id="email">
+
+    <label for="notes">Notes</label>
+    <textarea name="" id="notes"></textarea>
+
+    <input type="submit" value="Login">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
